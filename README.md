@@ -12,7 +12,7 @@ This Python script analyzes login logs and detects suspicious activity such as:
 - Brute force attack patterns
 - Unusual login behavior
 
-## Tools Used
+## Tools Used in this project
 
 - Python
 - Git
@@ -21,7 +21,7 @@ This Python script analyzes login logs and detects suspicious activity such as:
 
 ## Author
 
-KingLearning2701
+King Solomon
 
 Transitioning from Healthcare (12+ years experience) into Cybersecurity with focus on:
 
