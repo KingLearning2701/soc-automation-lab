@@ -28,3 +28,10 @@ Transitioning from Healthcare (12+ years experience) into Cybersecurity with foc
 - Security Automation
 - SOC Analysis
 - Threat Detection
+
+## Example Output
+
+⚠️ Suspicious activity detected for user2 (3 failed attempts)  
+⚠️ Suspicious activity detected for admin (4 failed attempts)
+
+This script simulates how SOC analysts detect brute force login attempts by analyzing authentication logs.
