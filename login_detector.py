@@ -1,15 +1,10 @@
-logins = [
-    "user1 SUCCESS",
-    "user2 FAILED",
-    "user2 FAILED",
-    "user2 FAILED",
-    "user3 SUCCESS"
-]
-
 failed_attempts = {}
 
-for entry in logins:
-    user, status = entry.split()
+with open("login_logs.txt", "r") as file:
+    logs = file.readlines()
+
+for entry in logs:
+    user, status = entry.strip().split()
 
     if status == "FAILED":
         if user not in failed_attempts:
@@ -19,4 +14,4 @@ for entry in logins:
 
 for user, count in failed_attempts.items():
     if count >= 3:
-        print(f"⚠️ Suspicious activity detected for {user}")
+        print(f"⚠️ Suspicious activity detected for {user} ({count} failed attempts)")
